@@ -1,0 +1,4 @@
+name: EconomicInflation
+version: '${project.version}'
+main: me.dwaa.plugins.EconomicInflation
+api-version: 1.20
