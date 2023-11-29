@@ -16,11 +16,11 @@ public class DataHandler {
 
     public static void store(String user_received, List<ItemStack> user_gave, EconomicInflation plugin) {
         // Load existing properties or create new ones
-        if (user_received.equals("EMERALD")) {
+        if ("EMERALD".equals(user_received)) {
             Properties properties = loadProperties("selling", plugin);
             for (ItemStack itemStack : user_gave) {
                 String item = itemStack.getType().name();
-                if (!item.equals("AIR")) {
+                if (!"AIR".equals(item)) {
                     String value = properties.getProperty(item);
 
                     if (value == null) {
